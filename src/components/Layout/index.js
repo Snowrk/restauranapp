@@ -11,7 +11,6 @@ const Layout = () => {
   const [menuList, setmenuList] = useState([]);
   const [dishesList, setDishesList] = useState([]);
   let cart = 0;
-  console.log(cartObj);
   const vals = Object.values(cartObj);
   vals.forEach((item) => {
     cart += item;

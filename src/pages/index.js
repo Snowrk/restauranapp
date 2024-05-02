@@ -1,5 +1,5 @@
-import Layout from "./components/Layout";
-// import Hello from './components/Hello'
+import Layout from "../components/Layout";
+// import Hello from '../components/Hello'
 
 // write your code here
 const Home = () => (
