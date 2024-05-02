@@ -1,0 +1,34 @@
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  padding-inline: 0.5rem;
+  overflow: scroll;
+}
+
+.menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+.menu {
+  box-shadow: 0px 0px 15px 0px rgba(211, 211, 211, 0.5);
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  padding-block: 1rem;
+  font-size: 1.2rem;
+  padding-inline: 2rem;
+}
+
+.menu-btn[data-active='true'] {
+  border-bottom: 2px solid rgb(192, 125, 0);
+  color: rgb(192, 125, 0);
+}
+
+.menu-item {
+  flex-shrink: 0;
+}
