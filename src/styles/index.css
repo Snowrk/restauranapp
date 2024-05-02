@@ -235,3 +235,7 @@ button {
 .menu-item {
   flex-shrink: 0;
 }
+
+.abc {
+  color: green;
+}
