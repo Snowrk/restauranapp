@@ -72,6 +72,9 @@ const DishItem = (props) => {
 
 const Dishes = (props) => {
   const { dishesList, setCart, setCartObj, cartObj } = props;
+  if (!(dishesList.length > 0)) {
+    return <p>Loading Dishes</p>;
+  }
   return (
     <div className="dishes">
       <ul className="dishes-list">
