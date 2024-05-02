@@ -1,3 +1,5 @@
+"use client";
+
 import { IoCartOutline } from "react-icons/io5";
 
 const Header = (props) => {

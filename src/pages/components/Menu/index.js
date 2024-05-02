@@ -1,3 +1,5 @@
+"use client";
+
 const MenuItem = (props) => {
   const { menuName, current, setList } = props;
   return (

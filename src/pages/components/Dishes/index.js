@@ -1,3 +1,5 @@
+"use client";
+
 const VegIcon = () => (
   <div className="veg icon-border">
     <div className="veg icon-circle" />
@@ -11,7 +13,7 @@ const NonVegIcon = () => (
 );
 
 const DishItem = (props) => {
-  const { itemDetails, setCart, setCartObj, cartObj } = props;
+  const { itemDetails, setCartObj, cartObj } = props;
   const quantity = Object.getOwnPropertyNames(cartObj).includes(
     itemDetails.dish_name
   )
@@ -71,7 +73,7 @@ const DishItem = (props) => {
 };
 
 const Dishes = (props) => {
-  const { dishesList, setCart, setCartObj, cartObj } = props;
+  const { dishesList, setCartObj, cartObj } = props;
   if (!(dishesList.length > 0)) {
     return <p>Loading Dishes</p>;
   }
@@ -81,7 +83,6 @@ const Dishes = (props) => {
         {dishesList.map((item) => (
           <DishItem
             itemDetails={item}
-            setCart={setCart}
             setCartObj={setCartObj}
             cartObj={cartObj}
             key={item.dish_id}
