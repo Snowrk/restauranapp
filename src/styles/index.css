@@ -19,6 +19,8 @@ body {
 
 button {
   outline: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 .dishes-list {
